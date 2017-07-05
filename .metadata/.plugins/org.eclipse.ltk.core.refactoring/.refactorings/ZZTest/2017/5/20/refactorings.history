@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;overlappingintervals.OvelappingIntervals.java&apos; to &apos;OverlappingIntervals.java&apos;&#x0D;&#x0A;- Original project: &apos;ZZTest&apos;&#x0D;&#x0A;- Original element: &apos;overlappingintervals.OvelappingIntervals.java&apos;&#x0D;&#x0A;- Renamed element: &apos;overlappingintervals.OverlappingIntervals.java&apos;" description="Rename compilation unit &apos;OvelappingIntervals.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;overlappingintervals{OvelappingIntervals.java" name="OverlappingIntervals.java" references="false" stamp="1495087092033" version="1.0"/>
+</session>
