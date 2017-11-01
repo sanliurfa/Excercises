@@ -160,7 +160,7 @@ public class _067_QuestionExamplesArraysString {
 				int num = 120;
 				switch(num) {
 				default: System.out.println("default");
-				case 0: System.out.println("case1");
+//				case 0: System.out.println("case1");		//Duplicate Case!!
 				case 10*2-20: System.out.println("case2");
 				break;
 				}
