@@ -1,9 +1,13 @@
 package academy.learnprogramming;
 
-public class _100_Animal {
+public class _102_Animal {
 //	public _099_Animal() {
 //		System.out.println("Animal");
 //	}
+	
+	public _102_Animal() {
+		
+	}
 
 	private int age;
 	private String name; 
@@ -24,12 +28,21 @@ public class _100_Animal {
 		this.name = name;
 	}
 
-	public _100_Animal(int age) {
+	public _102_Animal(int age) {
 		System.out.println("Animal");
 		this.age = age;
 	}
 	
 	protected void printDetails() {
 		System.out.println("name= "+ name+ " age= "+ age);
+	}
+	
+	public void eat() {
+		System.out.println("Animal is eating");
+	}
+	
+//	public final double getAverageWeight() {				// Wanneer een methode final is dan kan het niet overridden worden.
+	public double getAverageWeight() {
+		return 10.0;
 	}
 }

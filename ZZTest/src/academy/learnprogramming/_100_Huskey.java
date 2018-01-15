@@ -11,4 +11,6 @@ public class _100_Huskey extends _100_Dog{
 		
 		System.out.println("Huskey");
 	}
+	
+
 }
