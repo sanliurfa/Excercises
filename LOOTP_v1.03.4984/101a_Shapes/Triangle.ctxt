@@ -1,0 +1,94 @@
+#BlueJ class context
+comment0.target=Triangle
+comment0.text=\r\n\ Instances\ of\ the\ class\ {@code\ Triangle}\ represents\ triangles\r\n\ that\ are\ mind\ for\ work\ on\ a\ virtual\ canvas\r\n\ during\ the\ first\ introduction\ to\ objects.\r\n\ They\ are\ defined\ by\ their\ position,\ size,\ color\ and\ direction\r\n\ to\ which\ the\ main\ vertex\ is\ turned.\r\n\ The\ position\ of\ an\ instance\ is\ defined\ as\ the\ position\r\n\ of\ the\ upper\ left\ corner\ of\ the\ circumscribe\ rectangle\r\n\ and\ its\ size\ is\ defined\ as\ the\ size\ of\ this\ rectangle.\r\n\ The\ direction\ of\ the\ triangle\ is\ the\ direction\r\n\ to\ which\ the\ main\ vertex\ of\ the\ triagle\ is\ turned\r\n\r\n\ @author\ \ Rudolf\ PECINOVSK\u00DD\r\n\ @version\ 1.01.4240\ \u2014\ 2012-10-13\r\n
+comment1.params=
+comment1.target=int\ getStep()
+comment1.text=\r\n\ Returns\ the\ default\ distance\ (step)\ of\ movement\r\n\ used\ in\ parameterless\ movement\ commands.\r\n\r\n\ @return\ The\ default\ distance\ of\ movement\ in\ points\r\n
+comment10.params=x\ y
+comment10.target=void\ setPosition(int,\ int)
+comment10.text=\r\n\ Sets\ a\ position\ of\ the\ instance\ (new\ values\ of\ its\ coordinates)\r\n\ and\ moves\ the\ instance\ to\ this\ position.\r\n\ The\ position\ of\ instance\ is\ defined\ as\ the\ position\r\n\ of\ the\ upper\ left\ corner\ of\ the\ circumscribe\ rectangle.\r\n\r\n\ @param\ x\ \ The\ newly\ set\ horizontal\ coordinate,\r\n\ \ \ \ \ \ \ \ \ \ \ left\ canvas\ border\ has\ x\=0,\ coordinate\ increases\ to\ the\ right\r\n\ @param\ y\ \ The\ newly\ set\ vertical\ coordinate,\r\n\ \ \ \ \ \ \ \ \ \ \ upper\ canvas\ border\ has\ y\=0,\ coordinate\ increases\ to\ the\ down\r\n
+comment11.params=
+comment11.target=int\ getWidth()
+comment11.text=\r\n\ Returns\ the\ current\ width\ of\ the\ instance.\r\n\ The\ width\ of\ the\ instance\ is\ defined\ as\ the\ width\r\n\ of\ the\ circumscribe\ rectangle.\r\n\r\n\ @return\ \ The\ current\ width\ of\ the\ instance\r\n
+comment12.params=
+comment12.target=int\ getHeight()
+comment12.text=\r\n\ Returns\ the\ current\ height\ of\ the\ instance.\r\n\ The\ height\ of\ the\ instance\ is\ defined\ as\ the\ height\r\n\ of\ the\ circumscribe\ rectangle.\r\n\r\n\ @return\ \ The\ current\ height\ of\ the\ instance\r\n
+comment13.params=size
+comment13.target=void\ setSize(int)
+comment13.text=\r\n\ Sets\ a\ new\ "square"\ size\ of\ the\ instance,\ which\ means\r\n\ the\ specified\ size\ is\ set\ to\ its\ width\ as\ well\ as\ to\ its\ height.\r\n\ The\ size\ of\ instance\ is\ defined\ as\ the\ size\r\n\ of\ the\ circumscribe\ rectangle.\r\n\ The\ set\ dimensions\ must\ be\ non-negative,\r\n\ the\ zero\ value\ is\ substituted\ by\ one.\r\n\r\n\ @param\ size\ The\ new\ dimensions\ of\ the\ instance;\ size\ &gt;\=\ 0\r\n
+comment14.params=width\ height
+comment14.target=void\ setSize(int,\ int)
+comment14.text=\r\n\ Sets\ a\ new\ dimensions\ of\ the\ instance.\r\n\ The\ size\ of\ the\ instance\ is\ defined\ as\ the\ size\r\n\ of\ the\ circumscribe\ rectangle.\r\n\ The\ set\ dimensions\ must\ be\ non-negative,\r\n\ the\ zero\ value\ is\ substituted\ by\ one.\r\n\r\n\ @param\ width\ \ The\ new\ width\ of\ the\ instance;\ \ width\ \ &gt;\=\ 0\r\n\ @param\ height\ The\ new\ height\ of\ the\ instance;\ height\ &gt;\=\ 0\r\n
+comment15.params=
+comment15.target=NamedColor\ getColor()
+comment15.text=\r\n\ Returns\ the\ current\ color\ of\ the\ instance.\r\n\r\n\ @return\ The\ current\ color\ of\ the\ instance\r\n
+comment16.params=color
+comment16.target=void\ setColor(NamedColor)
+comment16.text=\r\n\ Sets\ a\ new\ color\ of\ the\ instance.\r\n\r\n\ @param\ color\ The\ new\ color\ of\ the\ instance\r\n
+comment17.params=
+comment17.target=java.lang.String\ getName()
+comment17.text=\r\n\ Returns\ the\ name\ of\ the\ instance,\ which\ means\ the\ name\ of\ its\ class\r\n\ followed\ by\ the\ order\ of\ the\ instance\ ID.\r\n\r\n\ @return\ \ Instance\ name\r\n
+comment18.params=
+comment18.target=Direction8\ getDirection()
+comment18.text=\r\n\ Returns\ the\ current\ direction\r\n\ to\ which\ the\ main\ vertex\ of\ the\ triangle\ is\ turned.\r\n\r\n\ @return\ The\ current\ direction\ of\ the\ instance\r\n
+comment19.params=newDir8
+comment19.target=void\ setDirection(Direction8)
+comment19.text=\r\n\ Set\ the\ new\ direction\ to\ which\ the\ main\ vertex\ of\ the\ triagle\ is\ turned.\r\n\r\n\ @param\ newDir8\ \ The\ requested\ direction\r\n
+comment2.params=distance
+comment2.target=void\ setStep(int)
+comment2.text=\r\n\ Sets\ the\ default\ distance\ (step)\ of\ movement\r\n\ used\ in\ parameterless\ movement\ commands.\r\n\r\n\ @param\ distance\ The\ default\ distance\ of\ movement;<br>\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0\ &lt;\=\ distance\ &lt;\=\ {@link\ \#MAX_STEP}\ must\ be\ true\r\n
+comment20.params=
+comment20.target=java.lang.String\ toString()
+comment20.text=\r\n\ Returns\ a\ string\ representation\ of\ the\ object\ (object's\ signature).\r\n\ It\ is\ used\ mainly\ by\ the\ debugging.\r\n\r\n\ @return\ Name\ of\ the\ instance\ followed\ by\ its\ coordinates,\r\n\ \ \ \ \ \ \ \ \ dimensions\ and\ color\r\n
+comment21.params=
+comment21.target=void\ paint()
+comment21.text=\r\n\ Paints\ the\ instance\ on\ the\ canvas.\r\n
+comment22.params=
+comment22.target=void\ rubOut()
+comment22.text=\r\n\ Rubs\ out\ the\ instance\ from\ the\ canvas\r\n\ (repaints\ it\ by\ the\ background\ color).\r\n
+comment23.params=distance
+comment23.target=void\ moveRight(int)
+comment23.text=\r\n\ Move\ the\ instance\ by\ the\ specified\ amount\ of\ points\ to\ the\ right\ or\r\n\ (by\ negative\ argument)\ left.\r\n\r\n\ @param\ distance\ Distance\ for\ move\r\n
+comment24.params=
+comment24.target=void\ moveRight()
+comment24.text=\r\n\ Move\ the\ instance\ by\ the\ default\ amount\ of\ points\ to\ the\ right.\r\n\ This\ number\ can\ be\ obtained\ by\ call\ the\ static\ method\ {@link\ \#getStep()}\r\n\ and\ set\ by\ call\ the\ static\ method\ {@link\ \#setStep(int)}.\r\n
+comment25.params=
+comment25.target=void\ moveLeft()
+comment25.text=\r\n\ Move\ the\ instance\ by\ the\ default\ amount\ of\ points\ to\ the\ left.\r\n\ This\ number\ can\ be\ obtained\ by\ call\ the\ static\ method\ {@link\ \#getStep()}\r\n\ and\ set\ by\ call\ the\ static\ method\ {@link\ \#setStep(int)}.\r\n
+comment26.params=distance
+comment26.target=void\ moveDown(int)
+comment26.text=\r\n\ Move\ the\ instance\ by\ the\ specified\ amount\ of\ points\ down\ or\r\n\ (by\ negative\ argument)\ up.\r\n\r\n\ @param\ distance\ Distance\ for\ move\r\n
+comment27.params=
+comment27.target=void\ moveDown()
+comment27.text=\r\n\ Move\ the\ instance\ by\ the\ default\ amount\ of\ points\ down.\r\n\ This\ number\ can\ be\ obtained\ by\ call\ the\ static\ method\ {@link\ \#getStep()}\r\n\ and\ set\ by\ call\ the\ static\ method\ {@link\ \#setStep(int)}.\r\n
+comment28.params=
+comment28.target=void\ moveUp()
+comment28.text=\r\n\ Move\ the\ instance\ by\ the\ default\ amount\ of\ points\ up.\r\n\ This\ number\ can\ be\ obtained\ by\ call\ the\ static\ method\ {@link\ \#getStep()}\r\n\ and\ set\ by\ call\ the\ static\ method\ {@link\ \#setStep(int)}.\r\n
+comment29.params=
+comment29.target=void\ repaintPrivate()
+comment29.text=\r\n\ Paints\ the\ instance\ on\ the\ canvas.\r\n
+comment3.params=
+comment3.target=Triangle()
+comment3.text=\r\n\ Creates\ a\ new\ instance\ with\ default\ position,\ size,\ color\r\n\ and\ direction.\r\n\ The\ instance\ will\ be\ placed\ in\ the\ upper\ left\ corner\ of\ the\ canvas,\r\n\ it\ will\ have\ a\ default\ color,\r\n\ height\ equals\ the\ step\ and\ width\ equals\ twice\ the\ step\ (default\ 50\u00D7100)\r\n\ and\ its\ main\ vertex\ will\ be\ turned\ to\ the\ North.\r\n
+comment30.params=
+comment30.target=int[][]\ getVertexes()
+comment30.text=\r\n\ Returns\ a\ matrix\ with\ coordinates\ of\ particular\ vertexes\ of\ the\ triangle.\r\n\r\n\ @return\ A\ matrix\ with\ coordinates\r\n
+comment4.params=x\ y\ width\ height
+comment4.target=Triangle(int,\ int,\ int,\ int)
+comment4.text=\r\n\ Creates\ a\ new\ instance\ with\ given\ position\ and\ size\r\n\ and\ with\ default\ color\ and\ direction.\r\n\ The\ position\ of\ instance\ is\ defined\ as\ the\ position\r\n\ of\ the\ upper\ left\ corner\ of\ the\ circumscribe\ rectangle\r\n\ and\ its\ size\ is\ defined\ as\ the\ size\ of\ this\ rectangle.\r\n\ The\ direction\ of\ the\ triangle\ is\ the\ direction\r\n\ to\ which\ the\ main\ vertex\ of\ the\ triangle\ is\ turned\r\n\r\n\ @param\ x\ \ The\ horizontal\ coordinate,\r\n\ \ \ \ \ \ \ \ \ \ \ left\ canvas\ border\ has\ x\=0,\ coordinate\ increases\ to\ the\ right\r\n\ @param\ y\ \ The\ vertical\ coordinate,\r\n\ \ \ \ \ \ \ \ \ \ \ upper\ canvas\ border\ has\ y\=0,\ coordinate\ increases\ to\ the\ down\r\n\ @param\ width\ \ The\ width\ \ of\ the\ instance\ -\ must\ be\ &gt;\ 0\r\n\ @param\ height\ The\ height\ of\ the\ instance\ -\ must\ be\ &gt;\ 0\r\n
+comment5.params=x\ y\ width\ height\ color
+comment5.target=Triangle(int,\ int,\ int,\ int,\ NamedColor)
+comment5.text=\r\n\ Creates\ a\ new\ instance\ with\ given\ position,\ size\ and\ color\r\n\ and\ with\ default\ direction\ for\ the\ main\ vertex.\r\n\ The\ position\ of\ instance\ is\ defined\ as\ the\ position\r\n\ of\ the\ upper\ left\ corner\ of\ the\ circumscribe\ rectangle\r\n\ and\ its\ size\ is\ defined\ as\ the\ size\ of\ this\ rectangle.\r\n\ The\ direction\ of\ the\ triangle\ is\ the\ direction\r\n\ to\ which\ the\ main\ vertex\ of\ the\ triangle\ is\ turned\r\n\r\n\ @param\ x\ \ The\ horizontal\ coordinate,\r\n\ \ \ \ \ \ \ \ \ \ \ left\ canvas\ border\ has\ x\=0,\ coordinate\ increases\ to\ the\ right\r\n\ @param\ y\ \ The\ vertical\ coordinate,\r\n\ \ \ \ \ \ \ \ \ \ \ upper\ canvas\ border\ has\ y\=0,\ coordinate\ increases\ to\ the\ down\r\n\ @param\ width\ \ The\ width\ \ of\ the\ instance\ -\ must\ be\ &gt;\ 0\r\n\ @param\ height\ The\ height\ of\ the\ instance\ -\ must\ be\ &gt;\ 0\r\n\ @param\ color\ \ The\ color\ of\ the\ instance\r\n
+comment6.params=x\ y\ width\ height\ direction
+comment6.target=Triangle(int,\ int,\ int,\ int,\ Direction8)
+comment6.text=\r\n\ Creates\ a\ new\ instance\ with\ given\ position,\ size\ and\ direction\r\n\ and\ with\ default\ color.\r\n\ The\ position\ of\ an\ instance\ is\ defined\ as\ the\ position\r\n\ of\ the\ upper\ left\ corner\ of\ the\ circumscribe\ rectangle\r\n\ and\ its\ size\ is\ defined\ as\ the\ size\ of\ this\ rectangle.\r\n\ The\ direction\ of\ the\ triangle\ is\ the\ direction\r\n\ to\ which\ the\ main\ vertex\ of\ the\ triangle\ is\ turned\r\n\r\n\ @param\ x\ \ The\ horizontal\ coordinate,\r\n\ \ \ \ \ \ \ \ \ \ \ left\ canvas\ border\ has\ x\=0,\ coordinate\ increases\ to\ the\ right\r\n\ @param\ y\ \ The\ vertical\ coordinate,\r\n\ \ \ \ \ \ \ \ \ \ \ upper\ canvas\ border\ has\ y\=0,\ coordinate\ increases\ to\ the\ down\r\n\ @param\ width\ \ The\ width\ \ of\ the\ instance\ -\ must\ be\ &gt;\ 0\r\n\ @param\ height\ The\ height\ of\ the\ instance\ -\ must\ be\ &gt;\ 0\r\n\ @param\ direction\ The\ direction\ to\ which\ the\ main\ vertex\ is\ turned\r\n
+comment7.params=x\ y\ width\ height\ color\ direction
+comment7.target=Triangle(int,\ int,\ int,\ int,\ NamedColor,\ Direction8)
+comment7.text=\r\n\ Creates\ a\ new\ instance\ with\ given\ position,\ size,\ color\r\n\ and\ direction.\r\n\ The\ position\ of\ instance\ is\ defined\ as\ the\ position\r\n\ of\ the\ upper\ left\ corner\ of\ the\ circumscribe\ rectangle\r\n\ and\ its\ size\ is\ defined\ as\ the\ size\ of\ this\ rectangle.\r\n\ The\ direction\ of\ the\ triangle\ is\ the\ direction\r\n\ to\ which\ the\ main\ vertex\ of\ the\ triangle\ is\ turned\r\n\r\n\ @param\ x\ \ The\ horizontal\ coordinate,\r\n\ \ \ \ \ \ \ \ \ \ \ left\ canvas\ border\ has\ x\=0,\ coordinate\ increases\ to\ the\ right\r\n\ @param\ y\ \ The\ vertical\ coordinate,\r\n\ \ \ \ \ \ \ \ \ \ \ upper\ canvas\ border\ has\ y\=0,\ coordinate\ increases\ to\ the\ down\r\n\ @param\ width\ \ The\ width\ \ of\ the\ instance\ -\ must\ be\ &gt;\ 0\r\n\ @param\ height\ The\ height\ of\ the\ instance\ -\ must\ be\ &gt;\ 0\r\n\ @param\ color\ \ The\ color\ of\ the\ instance\r\n\ @param\ direction\ The\ direction\ to\ which\ the\ main\ vertex\ is\ turned\r\n
+comment8.params=
+comment8.target=int\ getX()
+comment8.text=\r\n\ Returns\ the\ current\ x\ coordinate\ of\ the\ instance,\r\n\ which\ means\ the\ horizontal\ position\ of\ the\ upper\ left\ corner\r\n\ of\ the\ circumscribe\ rectangle.\r\n\r\n\ @return\ \ The\ horizontal\ coordinate,\r\n\ \ \ \ \ \ \ \ \ \ left\ canvas\ border\ has\ x\=0,\ coordinate\ increases\ to\ the\ right\r\n
+comment9.params=
+comment9.target=int\ getY()
+comment9.text=\r\n\ Returns\ the\ current\ y\ coordinate\ of\ the\ instance,\r\n\ which\ means\ the\ vertical\ position\ of\ the\ upper\ left\ corner\r\n\ of\ the\ circumscribe\ rectangle.\r\n\r\n\ @return\ \ The\ vertical\ coordinate,\r\n\ \ \ \ \ \ \ \ \ \ upper\ canvas\ border\ has\ y\=0,\ coordinate\ increases\ down\r\n
+numComments=31
