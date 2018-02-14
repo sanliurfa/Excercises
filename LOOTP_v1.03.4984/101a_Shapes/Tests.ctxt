@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Tests
+comment0.text=\r\n\ test\ class\ Tests\ -\ geef\ hier\ een\ beschrijving\ van\ deze\ class\r\n\r\n\ @author\ (jouw\ naam)\r\n\ @version\ (versie\ nummer\ of\ datum)\r\n
+comment1.params=
+comment1.target=Tests()
+comment1.text=\r\n\ Constructor\ voor\ test\ class\ Tests\r\n
+comment2.params=
+comment2.target=void\ setUp()
+comment2.text=\r\n\ Opzetten\ van\ de\ test\ fixture.\r\n\r\n\ Aanroep\ voor\ elke\ test\ case\ method.\r\n
+comment3.params=
+comment3.target=void\ tearDown()
+comment3.text=\r\n\ Verwijderen\ van\ de\ test\ fixture.\r\n\r\n\ Aanroep\ na\ elke\ test\ case\ method.\r\n
+numComments=4
