@@ -55,7 +55,9 @@ class CheckCanJump130 implements CheckAnimal130{
 	
 }
 
-
+interface AnotherCheck130{
+	boolean check(Animal130 first, Animal130 second);
+}
 
 
 public class _130_LambdaExpressions {
@@ -73,8 +75,29 @@ public class _130_LambdaExpressions {
 		print(animals, animal -> !animal.isCanSwim());
 		
 		
+		print(animals, (Animal130 animal) -> {
+			return animal.isCanJump();							// Bij een statement dan is er geen 
+		});
 		
-		print(animals, animal -> System.out.println("checking animal= "+ animal.isCanJump());
+		
+		print(animals, (Animal130 animal) -> {
+			System.out.println("checking animal= "+ animal.getType());
+			return animal.isCanJump();
+		});
+		
+		
+		Animal130 fish = animals.get(0);
+		Animal130 rabbit = animals.get(1);
+		Animal130 dog = animals.get(2);
+		
+		print(fish, rabbit, (f, s) -> f.isCanJump() && s.isCanSwim() );
+		print(fish, dog, ((first, second) -> first.isCanSwim() && second.isCanSwim() ));
+		
+		
+	}
+	
+	private static void print(Animal130 first, Animal130 second, AnotherCheck130 check) {
+		System.out.println(check.check(first, second));
 	}
 	
 	private static void print(List<Animal130> animals, CheckAnimal130 filter) {

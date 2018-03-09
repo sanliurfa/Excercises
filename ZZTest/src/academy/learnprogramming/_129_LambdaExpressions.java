@@ -71,6 +71,9 @@ public class _129_LambdaExpressions {
 		
 		print(animals, animal -> animal.isCanSwim());
 		print(animals, animal -> !animal.isCanSwim());
+		
+
+		
 	}
 	
 	private static void print(List<Animal> animals, CheckAnimal filter) {
