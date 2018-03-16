@@ -1,0 +1,62 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Process BPMN Process Design diagram" version="4">
+  <OBJECT>
+    <ID name="Process BPMN Process Design diagram" mc="Standard.BpmnProcessDesignDiagram" uid="ff5bc9a5-1a7d-4588-95cf-c6a264e2ef70"/>
+    <PID name="DataObjects" mc="Standard.BpmnProcess" uid="00b80fec-c690-45da-93aa-1458304c78eb"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">42</ATT>
+      <ATT name="UiData"><![CDATA[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]]></ATT>
+      <ATT name="Name"><![CDATA[Process BPMN Process Design diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Represented">
+        <REFOBJ>
+          <ID name="" mc="Standard.BpmnSequenceFlow" uid="bcf0158b-d53c-404f-9603-cd9ded26c0c6"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="Start" mc="Standard.BpmnStartEvent" uid="82c986e3-1091-465e-a5b3-bce367430cad"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="End" mc="Standard.BpmnEndEvent" uid="de1d14e1-06a2-43a1-ace7-6c14726fc7fd"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="Task" mc="Standard.BpmnTask" uid="7662c534-d8f0-438a-8186-94383194968f"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.BpmnSequenceFlow" uid="ff7bec34-b690-4b5b-b021-a14c3eeb9d34"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="Task1" mc="Standard.BpmnTask" uid="2c9d72de-82cf-40c4-927d-63ee2b241a53"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="Store" mc="Standard.BpmnDataStore" uid="378929b2-b05b-497b-bb1d-4a55b083947e"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="Object" mc="Standard.BpmnDataObject" uid="98aaee5e-d13c-4758-9904-64ed42801bd8"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="Collection Of" mc="Standard.BpmnDataObject" uid="23dbaf26-cf74-4110-a8bc-2a89a4aa2199"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="Input" mc="Standard.BpmnDataInput" uid="9cd8fc58-31f9-47f8-84d4-33cde922a8ad"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="Output" mc="Standard.BpmnDataOutput" uid="42204493-4044-4fe1-9c05-a1da3930398c"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="Object1" mc="Standard.BpmnDataObject" uid="fc704465-0471-49ae-a8ce-15a07a413f1b"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="Object2" mc="Standard.BpmnDataObject" uid="c7d797b9-38fc-4129-85e1-baf74e0ec600"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.BpmnDataAssociation" uid="6722994b-809c-44fc-968f-a22198d2dfe2"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.BpmnDataAssociation" uid="0b106196-e9c5-498b-b611-2a8f820715fc"/>
+        </REFOBJ>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

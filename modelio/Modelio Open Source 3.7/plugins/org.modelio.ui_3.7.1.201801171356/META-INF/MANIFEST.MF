@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.modelio.ui;singleton:=true
+Archiver-Version: Plexus Archiver
+Built-By: integration
+Require-Bundle: org.eclipse.ui,org.modelio.utils,org.eclipse.core.runt
+ ime,org.eclipse.gef,org.modelio.core.utils,org.modelio.core.rcp
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: modelio.org
+Export-Package: org.modelio.ui,org.modelio.ui.dialog,org.modelio.ui.ge
+ f,org.modelio.ui.htmleditor,org.modelio.ui.panel,org.modelio.ui.progr
+ ess,org.modelio.ui.swt
+Bundle-Name: Ui Plug-in
+Bundle-Version: 3.7.1.201801171356
+Bundle-ClassPath: icons/,.,rte/
+Bundle-Activator: org.modelio.ui.plugin.UI
+Created-By: Apache Maven 3.3.9
+Build-Jdk: 1.8.0_112
+Eclipse-BundleShape: dir
+

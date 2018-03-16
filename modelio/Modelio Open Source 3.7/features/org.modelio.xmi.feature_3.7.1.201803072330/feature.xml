@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.modelio.xmi.feature"
+      label="XMI"
+      version="3.7.1.201803072330"
+      provider-name="modelio.org">
+
+   <copyright>
+      Copyright 2016 Modeliosoft
+
+This file is part of Modelio.
+Modelio is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published
+by
+the Free Software Foundation, either version 3 of the License,
+or
+(at your option) any later version.
+Modelio is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with Modelio.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
+   </copyright>
+
+   <license url="">
+      Copyright 2016 Modeliosoft
+
+This file is part of Modelio.
+Modelio is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published
+by
+the Free Software Foundation, either version 3 of the License,
+or
+(at your option) any later version.
+Modelio is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with Modelio.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
+   </license>
+
+   <url>
+      <discovery label="Modelio" url="http://www.modelio.org"/>
+   </url>
+
+
+   <plugin
+         id="org.modelio.xmi"
+         download-size="1243"
+         install-size="2911"
+         version="3.7.1.201802061200"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.uml2"
+         download-size="10"
+         install-size="13"
+         version="3.2.0.v201101271655"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.uml2.common"
+         download-size="118"
+         install-size="245"
+         version="1.6.0.v201105021727"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.uml2.uml"
+         download-size="2990"
+         install-size="11279"
+         version="3.2.100.v201108110105"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.uml2.uml.resources"
+         download-size="217"
+         install-size="1891"
+         version="3.1.100.v201008191510"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.mapping.ecore2xml"
+         download-size="39"
+         install-size="77"
+         version="2.7.0.v20130610-0406"
+         unpack="false"/>
+
+<!--   <plugin-->
+<!--         id="org.modelio.bpmn-xml"-->
+<!--         download-size="0"-->
+<!--         install-size="0"-->
+<!--         version="0.0.0"-->
+<!--         unpack="false"/>-->
+
+</feature>

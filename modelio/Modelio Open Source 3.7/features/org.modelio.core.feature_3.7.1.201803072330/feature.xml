@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.modelio.core.feature"
+      label="Core"
+      version="3.7.1.201803072330"
+      provider-name="modelio.org">
+
+   <copyright>
+      Copyright 2016 Modeliosoft
+
+This file is part of Modelio.
+Modelio is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published
+by
+the Free Software Foundation, either version 3 of the License,
+or
+(at your option) any later version.
+Modelio is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with Modelio.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
+   </copyright>
+
+   <license url="">
+      Copyright 2016 Modeliosoft
+
+This file is part of Modelio.
+Modelio is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published
+by
+the Free Software Foundation, either version 3 of the License,
+or
+(at your option) any later version.
+Modelio is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with Modelio.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
+   </license>
+
+   <url>
+      <discovery label="Modelio" url="http://www.modelio.org"/>
+   </url>
+
+   <requires>
+      <import plugin="org.eclipse.emf.ecore"/>
+      <import plugin="org.modelio.version"/>
+      <import plugin="org.apache.httpcomponents.httpclient"/>
+      <import plugin="org.apache.httpcomponents.httpcore"/>
+      <import plugin="org.eclipse.emf.common"/>
+      <import plugin="org.modelio.app.core"/>
+      <import plugin="javax.annotation"/>
+      <import plugin="javax.inject"/>
+   </requires>
+
+   <plugin
+         id="org.modelio.core.kernel"
+         download-size="268"
+         install-size="560"
+         version="3.7.1.201803071646"
+         unpack="false"/>
+
+   <plugin
+         id="org.modelio.core.project"
+         download-size="286"
+         install-size="645"
+         version="3.7.1.201802201051"
+         unpack="false"/>
+
+   <plugin
+         id="org.modelio.core.session"
+         download-size="373"
+         install-size="787"
+         version="3.7.1.201802201051"
+         unpack="false"/>
+
+   <plugin
+         id="org.modelio.core.store.exml"
+         download-size="265"
+         install-size="557"
+         version="3.7.1.201801171354"
+         unpack="false"/>
+
+   <plugin
+         id="org.modelio.core.utils"
+         download-size="88"
+         install-size="162"
+         version="3.7.1.201801261721"
+         unpack="false"/>
+
+   <plugin
+         id="jdbm"
+         download-size="543"
+         install-size="567"
+         version="2.4.0"
+         unpack="false"/>
+
+   <plugin
+         id="practicalxml"
+         download-size="230"
+         install-size="253"
+         version="1.1.13"
+         unpack="false"/>
+
+   <plugin
+         id="org.modelio.metamodel.emfapi"
+         download-size="309"
+         install-size="790"
+         version="3.7.1.201803071023"
+         unpack="false"/>
+
+   <plugin
+         id="org.modelio.metamodel.implementation"
+         download-size="3001"
+         install-size="10477"
+         version="3.7.1.201803071646"
+         unpack="false"/>
+
+   <plugin
+         id="org.modelio.core.project.data"
+         download-size="195"
+         install-size="424"
+         version="3.7.1.201801171354"
+         unpack="false"/>
+
+   <plugin
+         id="org.modelio.metamodel.extensions"
+         download-size="0"
+         install-size="0"
+         version="3.7.1.201711280919"
+         unpack="false"/>
+
+</feature>

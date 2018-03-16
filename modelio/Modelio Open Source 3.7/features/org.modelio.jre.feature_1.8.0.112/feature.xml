@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.modelio.jre.feature"
+      label="jre8"
+      version="1.8.0.112"
+      provider-name="ORACLE">
+
+   <description url="">
+      
+   </description>
+
+   <copyright url="http://www.oracle.com/technetwork/java/javase/terms/license/index.html">
+      
+   </copyright>
+
+   <license url="">
+      
+   </license>
+
+</feature>

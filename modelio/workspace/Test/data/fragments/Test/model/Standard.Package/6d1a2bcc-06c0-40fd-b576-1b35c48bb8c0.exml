@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="test" version="4">
+  <OBJECT>
+    <ID name="test" mc="Standard.Package" uid="6d1a2bcc-06c0-40fd-b576-1b35c48bb8c0"/>
+    <PID name="Test" mc="Standard.Project" uid="162bc0cf-2feb-4938-8a87-994a23994a6a"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[test]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="XOR" mc="Standard.BpmnProcess" uid="c7385694-a9e5-4286-85ab-4dfe7c43f7bb"/>
+        <COMPID name="AND" mc="Standard.BpmnProcess" uid="2fd7d5b1-ed7f-4109-bbb4-441f25275211"/>
+        <COMPID name="OR" mc="Standard.BpmnProcess" uid="8c46cf1b-e542-4d58-9dff-44c09958402f"/>
+        <COMPID name="DataObjects" mc="Standard.BpmnProcess" uid="00b80fec-c690-45da-93aa-1458304c78eb"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
