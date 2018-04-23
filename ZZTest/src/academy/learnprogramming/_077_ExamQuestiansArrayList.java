@@ -63,7 +63,7 @@ public class _077_ExamQuestiansArrayList {
 		 * B. onetwo7
 		 * C. onetwo followed by an exception
 		 * D. Compiler error on line 9
-		 * E. Compiler errror on line 10
+		 * E. Compiler error on line 10
 		 * 
 		 * Mijn antwoord: C
 		 * Juist antwoord: D Voordat het in runtime komt moet het compileren, Bij het compileren krijgt het een exception in regel 9.

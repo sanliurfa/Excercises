@@ -98,11 +98,11 @@ public class _067_QuestionExamplesArraysString {
 				 * What is the output of the following code?
 				 */
 				
-				int[] list = {8, 10};
-				for(int b:list) {
-					System.out.print(b + ",");
-					break;
-				}
+//	1:			int[] list = {8, 10};
+//	2:			for(int b:list) {
+//	3:				System.out.print(b + ",");
+//	4:				break;
+//	5:			}
 				
 				/**
 				 * A. 8, 10,

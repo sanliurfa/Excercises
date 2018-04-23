@@ -63,3 +63,47 @@ public class _132_QuestionExamples {
 //Juiste antwoord: A 
 //					
 //	
+
+
+//3. 
+// Wich of the following lambda expressions can fill in the blank? (Choose all that apply)
+
+// List<String> list = new ArrayList<>();
+// list.removeIf(_______________);
+
+// A. s -> s.isEmpty()
+// B. s -> {s.isEmpty()}
+// C. s -> {s.isEmpty();}
+// D. s -> {return s.isEmpty();}
+// E. String s -> s.isEmpty()
+// F. (String s) -> s.isEmpty()
+
+//Mijn antwoord: A, C, D  
+//Juiste antwoord: A, D en F > Wanneer er brackets aanwezig zijn dan word er een return type verwacht B en C hebben dat niet
+//					          
+//	
+
+//4. 
+//Wich lambda can replace MyMagic class to return the same value? Choose all that apply
+
+// interface Magic{
+// String magic (double d);
+// }
+// Class MyMagic implements Magic {
+// public String magic(double d) {
+// return "Trick";
+// }
+// }
+
+
+//A. caller((e) -> "Trick");
+//B. caller((e) -> {"Trick"});
+//C. caller((e) -> {String e = ""; "Trick"});
+//D. caller((e) -> {String e = ""; return "Trick";});
+//E. caller((e) -> {String e = ""; return "Trick"});
+//F. caller((e) -> {String f = ""; return "Trick";});
+
+//Mijn antwoord: 
+//Juiste antwoord: A en F > B is fout want het heeft curly braces maar geen return type.
+//					        C, D, E zijn fout omdat de parameter e al reeds gebruikt is. en C bevat geen return keyword  
+//	                        
