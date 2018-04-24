@@ -117,7 +117,7 @@ public class _091_QuestionsExamples {
 	//		}
 	//	A. the code compiles as is
 	// 	B. There is exactly one compiler error in the code
-	//	C. There are exactlu two compiler errors in the code
+	//	C. There are exactly two compiler errors in the code
 	//	D. if the line with compile errors are removed, the output is climb climb.
 	//	E. if the line with compile errors are removed, the output is swing swing.
 	//	F. if the line with compile errors are removed, the code throws a NullPointerException.
