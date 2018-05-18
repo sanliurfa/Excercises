@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ba_1009" version="4">
+  <OBJECT>
+    <ID name="ba_1009" mc="Standard.Package" uid="eb94eb69-1b68-4349-b42a-4ddd0aef5fd3"/>
+    <PID name="BA_1009" mc="Standard.Project" uid="cd3ff038-2c48-4d43-b155-e564f9ce2faf"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[ba_1009]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Process" mc="Standard.BpmnProcess" uid="2edea9aa-8372-4e5a-9fca-0603d651962d"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

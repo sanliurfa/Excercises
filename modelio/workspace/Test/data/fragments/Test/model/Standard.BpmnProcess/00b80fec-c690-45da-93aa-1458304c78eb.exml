@@ -34,63 +34,6 @@
           <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Task" mc="Standard.BpmnTask" uid="7662c534-d8f0-438a-8186-94383194968f"/>
-          <ATTRIBUTES>
-            <ATT name="IsGlobal">false</ATT>
-            <ATT name="IsForCompensation">false</ATT>
-            <ATT name="StartQuantity">1</ATT>
-            <ATT name="CompletionQuantity">1</ATT>
-            <ATT name="TriggeredByEvent">false</ATT>
-            <ATT name="Name"><![CDATA[Task]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES></DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="" mc="Standard.BpmnSequenceFlow" uid="ff7bec34-b690-4b5b-b021-a14c3eeb9d34"/>
-          <ATTRIBUTES>
-            <ATT name="IsImmediate">false</ATT>
-            <ATT name="ConditionExpression"></ATT>
-            <ATT name="TriggeredByEvent">false</ATT>
-            <ATT name="Name"></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="SourceRef">
-              <REFOBJ>
-                <ID name="Start" mc="Standard.BpmnStartEvent" uid="82c986e3-1091-465e-a5b3-bce367430cad"/>
-              </REFOBJ>
-            </LINK>
-            <LINK relation="TargetRef">
-              <REFOBJ>
-                <ID name="Task" mc="Standard.BpmnTask" uid="7662c534-d8f0-438a-8186-94383194968f"/>
-              </REFOBJ>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="" mc="Standard.BpmnSequenceFlow" uid="bcf0158b-d53c-404f-9603-cd9ded26c0c6"/>
-          <ATTRIBUTES>
-            <ATT name="IsImmediate">false</ATT>
-            <ATT name="ConditionExpression"></ATT>
-            <ATT name="TriggeredByEvent">false</ATT>
-            <ATT name="Name"></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="SourceRef">
-              <REFOBJ>
-                <ID name="Task" mc="Standard.BpmnTask" uid="7662c534-d8f0-438a-8186-94383194968f"/>
-              </REFOBJ>
-            </LINK>
-            <LINK relation="TargetRef">
-              <REFOBJ>
-                <ID name="End" mc="Standard.BpmnEndEvent" uid="de1d14e1-06a2-43a1-ace7-6c14726fc7fd"/>
-              </REFOBJ>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
           <ID name="Task1" mc="Standard.BpmnTask" uid="2c9d72de-82cf-40c4-927d-63ee2b241a53"/>
           <ATTRIBUTES>
             <ATT name="IsGlobal">false</ATT>
@@ -120,43 +63,26 @@
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
-              <OBJECT>
-                <ID name="" mc="Standard.BpmnDataAssociation" uid="0b106196-e9c5-498b-b611-2a8f820715fc"/>
-                <ATTRIBUTES>
-                  <ATT name="Assignment"></ATT>
-                  <ATT name="Transfomation"></ATT>
-                  <ATT name="Language"></ATT>
-                  <ATT name="Name"></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="SourceRef">
-                    <REFOBJ>
-                      <ID name="Object2" mc="Standard.BpmnDataObject" uid="c7d797b9-38fc-4129-85e1-baf74e0ec600"/>
-                    </REFOBJ>
-                  </LINK>
-                </DEPENDENCIES>
-              </OBJECT>
             </COMP>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Store" mc="Standard.BpmnDataStore" uid="378929b2-b05b-497b-bb1d-4a55b083947e"/>
+          <ID name="Data Store" mc="Standard.BpmnDataStore" uid="378929b2-b05b-497b-bb1d-4a55b083947e"/>
           <ATTRIBUTES>
             <ATT name="Capacity">0</ATT>
             <ATT name="IsUnlimited">false</ATT>
             <ATT name="TriggeredByEvent">false</ATT>
-            <ATT name="Name"><![CDATA[Store]]></ATT>
+            <ATT name="Name"><![CDATA[Data Store]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Object" mc="Standard.BpmnDataObject" uid="98aaee5e-d13c-4758-9904-64ed42801bd8"/>
+          <ID name="Data Object" mc="Standard.BpmnDataObject" uid="98aaee5e-d13c-4758-9904-64ed42801bd8"/>
           <ATTRIBUTES>
             <ATT name="IsCollection">false</ATT>
             <ATT name="TriggeredByEvent">false</ATT>
-            <ATT name="Name"><![CDATA[Object]]></ATT>
+            <ATT name="Name"><![CDATA[Data Object]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES></DEPENDENCIES>
@@ -169,24 +95,41 @@
             <ATT name="Name"><![CDATA[Collection Of]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
-          <DEPENDENCIES></DEPENDENCIES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Note" uid="0eafaa7d-b68d-4a09-8414-a9fdd0e61822"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Hier hoort ook nog drie strepen in de icoon]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Input" mc="Standard.BpmnDataInput" uid="9cd8fc58-31f9-47f8-84d4-33cde922a8ad"/>
+          <ID name="Data Input" mc="Standard.BpmnDataInput" uid="9cd8fc58-31f9-47f8-84d4-33cde922a8ad"/>
           <ATTRIBUTES>
             <ATT name="IsCollection">false</ATT>
             <ATT name="TriggeredByEvent">false</ATT>
-            <ATT name="Name"><![CDATA[Input]]></ATT>
+            <ATT name="Name"><![CDATA[Data Input]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Output" mc="Standard.BpmnDataOutput" uid="42204493-4044-4fe1-9c05-a1da3930398c"/>
+          <ID name="Data Output" mc="Standard.BpmnDataOutput" uid="42204493-4044-4fe1-9c05-a1da3930398c"/>
           <ATTRIBUTES>
             <ATT name="IsCollection">false</ATT>
             <ATT name="TriggeredByEvent">false</ATT>
-            <ATT name="Name"><![CDATA[Output]]></ATT>
+            <ATT name="Name"><![CDATA[Data Output]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES></DEPENDENCIES>
@@ -210,6 +153,105 @@
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Task2" mc="Standard.BpmnTask" uid="6e4c5e55-8383-4a0c-a8fd-80e7c9cfbc6b"/>
+          <ATTRIBUTES>
+            <ATT name="IsGlobal">false</ATT>
+            <ATT name="IsForCompensation">false</ATT>
+            <ATT name="StartQuantity">1</ATT>
+            <ATT name="CompletionQuantity">1</ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[Task2]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="DataInputAssociation">
+              <OBJECT>
+                <ID name="" mc="Standard.BpmnDataAssociation" uid="c83c5eb8-bd38-4b71-bc86-06e92f87c7ef"/>
+                <ATTRIBUTES>
+                  <ATT name="Assignment"></ATT>
+                  <ATT name="Transfomation"></ATT>
+                  <ATT name="Language"></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="TargetRef">
+                    <REFOBJ>
+                      <ID name="Object2" mc="Standard.BpmnDataObject" uid="c7d797b9-38fc-4129-85e1-baf74e0ec600"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="f" mc="Standard.BpmnSequenceFlow" uid="8f6a383f-f8c5-46bc-a8d9-8c793b15c311"/>
+          <ATTRIBUTES>
+            <ATT name="IsImmediate">false</ATT>
+            <ATT name="ConditionExpression"></ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[f]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SourceRef">
+              <REFOBJ>
+                <ID name="Task1" mc="Standard.BpmnTask" uid="2c9d72de-82cf-40c4-927d-63ee2b241a53"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="TargetRef">
+              <REFOBJ>
+                <ID name="Task2" mc="Standard.BpmnTask" uid="6e4c5e55-8383-4a0c-a8fd-80e7c9cfbc6b"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="f1" mc="Standard.BpmnSequenceFlow" uid="64903613-b7a0-4c0e-88fb-1ce8efd130ba"/>
+          <ATTRIBUTES>
+            <ATT name="IsImmediate">false</ATT>
+            <ATT name="ConditionExpression"></ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[f1]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SourceRef">
+              <REFOBJ>
+                <ID name="Start" mc="Standard.BpmnStartEvent" uid="82c986e3-1091-465e-a5b3-bce367430cad"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="TargetRef">
+              <REFOBJ>
+                <ID name="Task1" mc="Standard.BpmnTask" uid="2c9d72de-82cf-40c4-927d-63ee2b241a53"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="f2" mc="Standard.BpmnSequenceFlow" uid="688de794-4de8-42fc-b082-565897e55da1"/>
+          <ATTRIBUTES>
+            <ATT name="IsImmediate">false</ATT>
+            <ATT name="ConditionExpression"></ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[f2]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SourceRef">
+              <REFOBJ>
+                <ID name="Task2" mc="Standard.BpmnTask" uid="6e4c5e55-8383-4a0c-a8fd-80e7c9cfbc6b"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="TargetRef">
+              <REFOBJ>
+                <ID name="End" mc="Standard.BpmnEndEvent" uid="de1d14e1-06a2-43a1-ace7-6c14726fc7fd"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
         </OBJECT>
       </COMP>
       <COMP relation="Product">

@@ -393,6 +393,28 @@
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
+        <OBJECT>
+          <ID name="f9" mc="Standard.BpmnSequenceFlow" uid="6255478d-be44-4169-bc81-a17ed65f021c"/>
+          <ATTRIBUTES>
+            <ATT name="IsImmediate">false</ATT>
+            <ATT name="ConditionExpression"></ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[f9]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SourceRef">
+              <REFOBJ>
+                <ID name="Task5" mc="Standard.BpmnTask" uid="cca59545-d973-4630-8cfd-b9821f08c1dd"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="TargetRef">
+              <REFOBJ>
+                <ID name="End1" mc="Standard.BpmnEndEvent" uid="4acb8eaf-4abb-4937-8cf4-674ddb6f5e62"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Process1 BPMN Process Design diagram" mc="Standard.BpmnProcessDesignDiagram" uid="9dda48e8-2504-4bf2-91de-a251c061e19a"/>

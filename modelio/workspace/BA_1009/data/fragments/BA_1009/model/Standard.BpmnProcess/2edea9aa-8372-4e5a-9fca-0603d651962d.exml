@@ -1,0 +1,464 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Process" version="4">
+  <OBJECT>
+    <ID name="Process" mc="Standard.BpmnProcess" uid="2edea9aa-8372-4e5a-9fca-0603d651962d"/>
+    <PID name="ba_1009" mc="Standard.Package" uid="eb94eb69-1b68-4349-b42a-4ddd0aef5fd3"/>
+    <ATTRIBUTES>
+      <ATT name="ProcessType">NoneProcess</ATT>
+      <ATT name="IsClosed">false</ATT>
+      <ATT name="IsExecutable">OUndefined</ATT>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[Process]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="FlowElement">
+        <OBJECT>
+          <ID name="Start" mc="Standard.BpmnStartEvent" uid="876a41cf-bac9-4f09-b1e2-f909f785be55"/>
+          <ATTRIBUTES>
+            <ATT name="IsInterrupting">true</ATT>
+            <ATT name="ParallelMultiple">false</ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[Start]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="End" mc="Standard.BpmnEndEvent" uid="dd850a0e-28c6-47f9-a124-401396305dfe"/>
+          <ATTRIBUTES>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[End]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Voorbereiden uitspraak" mc="Standard.BpmnTask" uid="492f6424-f1c6-4d66-8dd8-14f8d75b803e"/>
+          <ATTRIBUTES>
+            <ATT name="IsGlobal">false</ATT>
+            <ATT name="IsForCompensation">false</ATT>
+            <ATT name="StartQuantity">1</ATT>
+            <ATT name="CompletionQuantity">1</ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[Voorbereiden uitspraak]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="Note" mc="Infrastructure.Note" uid="427ff659-5677-4611-9986-82aa7cd4052a"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[BPM]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"><![CDATA[Note]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.BpmnSequenceFlow" uid="a4f4abdb-fc17-4555-bdea-0e21828c1485"/>
+          <ATTRIBUTES>
+            <ATT name="IsImmediate">false</ATT>
+            <ATT name="ConditionExpression"></ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SourceRef">
+              <REFOBJ>
+                <ID name="Start" mc="Standard.BpmnStartEvent" uid="876a41cf-bac9-4f09-b1e2-f909f785be55"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="TargetRef">
+              <REFOBJ>
+                <ID name="Voorbereiden uitspraak" mc="Standard.BpmnTask" uid="492f6424-f1c6-4d66-8dd8-14f8d75b803e"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Document haalOp" mc="Standard.BpmnTask" uid="2f4313bb-8642-4728-b5d0-d35cc5dcc12d"/>
+          <ATTRIBUTES>
+            <ATT name="IsGlobal">false</ATT>
+            <ATT name="IsForCompensation">false</ATT>
+            <ATT name="StartQuantity">1</ATT>
+            <ATT name="CompletionQuantity">1</ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[Document haalOp]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="Note" mc="Infrastructure.Note" uid="8053cb7e-278d-4dd6-ac85-4a19c54f72a8"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Elementair]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"><![CDATA[Note]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Verwerk Documenten (registreer)" mc="Standard.BpmnTask" uid="7ae68ad6-af56-412c-a9c8-8a5f57666008"/>
+          <ATTRIBUTES>
+            <ATT name="IsGlobal">false</ATT>
+            <ATT name="IsForCompensation">false</ATT>
+            <ATT name="StartQuantity">1</ATT>
+            <ATT name="CompletionQuantity">1</ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[Verwerk Documenten (registreer)]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Verwerk Documenten (verwerk)" mc="Standard.BpmnTask" uid="214b95f4-fe38-40c5-9335-84096fec9201"/>
+          <ATTRIBUTES>
+            <ATT name="IsGlobal">false</ATT>
+            <ATT name="IsForCompensation">false</ATT>
+            <ATT name="StartQuantity">1</ATT>
+            <ATT name="CompletionQuantity">1</ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[Verwerk Documenten (verwerk)]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Verwerk Documenten Processen" mc="Standard.BpmnTask" uid="56713ef1-6cfd-444e-bfb1-a6c8a399a71b"/>
+          <ATTRIBUTES>
+            <ATT name="IsGlobal">false</ATT>
+            <ATT name="IsForCompensation">false</ATT>
+            <ATT name="StartQuantity">1</ATT>
+            <ATT name="CompletionQuantity">1</ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[Verwerk Documenten Processen]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Verwerk Documenten Proc. Service" mc="Standard.BpmnTask" uid="71c27bc2-0de1-4e91-b65a-c173310fcf23"/>
+          <ATTRIBUTES>
+            <ATT name="IsGlobal">false</ATT>
+            <ATT name="IsForCompensation">false</ATT>
+            <ATT name="StartQuantity">1</ATT>
+            <ATT name="CompletionQuantity">1</ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[Verwerk Documenten Proc. Service]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Document Service registreer" mc="Standard.BpmnTask" uid="12b54b5c-83f5-4b0d-8ac2-52e1cbaa22ec"/>
+          <ATTRIBUTES>
+            <ATT name="IsGlobal">false</ATT>
+            <ATT name="IsForCompensation">false</ATT>
+            <ATT name="StartQuantity">1</ATT>
+            <ATT name="CompletionQuantity">1</ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[Document Service registreer]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="f" mc="Standard.BpmnSequenceFlow" uid="a7b41d8b-722e-4e7a-9cc3-78c2c6501621"/>
+          <ATTRIBUTES>
+            <ATT name="IsImmediate">false</ATT>
+            <ATT name="ConditionExpression"></ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[f]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SourceRef">
+              <REFOBJ>
+                <ID name="Voorbereiden uitspraak" mc="Standard.BpmnTask" uid="492f6424-f1c6-4d66-8dd8-14f8d75b803e"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="TargetRef">
+              <REFOBJ>
+                <ID name="Document haalOp" mc="Standard.BpmnTask" uid="2f4313bb-8642-4728-b5d0-d35cc5dcc12d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Complex Gateway" mc="Standard.BpmnComplexGateway" uid="e92eb435-51e6-4e95-a1b9-b6dbf04145ef"/>
+          <ATTRIBUTES>
+            <ATT name="ActivationExpression"></ATT>
+            <ATT name="GatewayDirection">UnspecifiedDirection</ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[Complex Gateway]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="f2" mc="Standard.BpmnSequenceFlow" uid="fc43a029-b594-485c-962a-58e5a8c63818"/>
+          <ATTRIBUTES>
+            <ATT name="IsImmediate">false</ATT>
+            <ATT name="ConditionExpression"></ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[f2]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SourceRef">
+              <REFOBJ>
+                <ID name="Verwerk Documenten (registreer)" mc="Standard.BpmnTask" uid="7ae68ad6-af56-412c-a9c8-8a5f57666008"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="TargetRef">
+              <REFOBJ>
+                <ID name="Complex Gateway" mc="Standard.BpmnComplexGateway" uid="e92eb435-51e6-4e95-a1b9-b6dbf04145ef"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="f3" mc="Standard.BpmnSequenceFlow" uid="1af473f7-c750-4c9a-bcbd-3b7f4d85c824"/>
+          <ATTRIBUTES>
+            <ATT name="IsImmediate">false</ATT>
+            <ATT name="ConditionExpression"></ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[f3]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SourceRef">
+              <REFOBJ>
+                <ID name="Complex Gateway" mc="Standard.BpmnComplexGateway" uid="e92eb435-51e6-4e95-a1b9-b6dbf04145ef"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="TargetRef">
+              <REFOBJ>
+                <ID name="Verwerk Documenten (verwerk)" mc="Standard.BpmnTask" uid="214b95f4-fe38-40c5-9335-84096fec9201"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Complex Gateway1" mc="Standard.BpmnComplexGateway" uid="28adf17c-f4f1-4216-8c3c-d89be722b256"/>
+          <ATTRIBUTES>
+            <ATT name="ActivationExpression"></ATT>
+            <ATT name="GatewayDirection">UnspecifiedDirection</ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[Complex Gateway1]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="f1" mc="Standard.BpmnSequenceFlow" uid="de49774a-f21c-4b61-b022-48cc9044a099"/>
+          <ATTRIBUTES>
+            <ATT name="IsImmediate">false</ATT>
+            <ATT name="ConditionExpression"></ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[f1]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SourceRef">
+              <REFOBJ>
+                <ID name="Document haalOp" mc="Standard.BpmnTask" uid="2f4313bb-8642-4728-b5d0-d35cc5dcc12d"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="TargetRef">
+              <REFOBJ>
+                <ID name="Complex Gateway1" mc="Standard.BpmnComplexGateway" uid="28adf17c-f4f1-4216-8c3c-d89be722b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="f4" mc="Standard.BpmnSequenceFlow" uid="0bfe5d3c-adeb-478b-ae4b-8eb242b02917"/>
+          <ATTRIBUTES>
+            <ATT name="IsImmediate">false</ATT>
+            <ATT name="ConditionExpression"></ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[f4]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SourceRef">
+              <REFOBJ>
+                <ID name="Complex Gateway1" mc="Standard.BpmnComplexGateway" uid="28adf17c-f4f1-4216-8c3c-d89be722b256"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="TargetRef">
+              <REFOBJ>
+                <ID name="Verwerk Documenten (registreer)" mc="Standard.BpmnTask" uid="7ae68ad6-af56-412c-a9c8-8a5f57666008"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="f5" mc="Standard.BpmnSequenceFlow" uid="6f585e02-ed98-47f2-99e0-bc946a86b6bb"/>
+          <ATTRIBUTES>
+            <ATT name="IsImmediate">false</ATT>
+            <ATT name="ConditionExpression"></ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[f5]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SourceRef">
+              <REFOBJ>
+                <ID name="Complex Gateway" mc="Standard.BpmnComplexGateway" uid="e92eb435-51e6-4e95-a1b9-b6dbf04145ef"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="TargetRef">
+              <REFOBJ>
+                <ID name="Complex Gateway1" mc="Standard.BpmnComplexGateway" uid="28adf17c-f4f1-4216-8c3c-d89be722b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="f6" mc="Standard.BpmnSequenceFlow" uid="3f24882b-1c41-47ff-82f6-b15fa34d6ca1"/>
+          <ATTRIBUTES>
+            <ATT name="IsImmediate">false</ATT>
+            <ATT name="ConditionExpression"></ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[f6]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SourceRef">
+              <REFOBJ>
+                <ID name="Verwerk Documenten (registreer)" mc="Standard.BpmnTask" uid="7ae68ad6-af56-412c-a9c8-8a5f57666008"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="TargetRef">
+              <REFOBJ>
+                <ID name="Verwerk Documenten Processen" mc="Standard.BpmnTask" uid="56713ef1-6cfd-444e-bfb1-a6c8a399a71b"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="f7" mc="Standard.BpmnSequenceFlow" uid="0871adb5-fc51-4162-b0e9-cb8409440f1c"/>
+          <ATTRIBUTES>
+            <ATT name="IsImmediate">false</ATT>
+            <ATT name="ConditionExpression"></ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[f7]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SourceRef">
+              <REFOBJ>
+                <ID name="Verwerk Documenten Processen" mc="Standard.BpmnTask" uid="56713ef1-6cfd-444e-bfb1-a6c8a399a71b"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="TargetRef">
+              <REFOBJ>
+                <ID name="Verwerk Documenten Proc. Service" mc="Standard.BpmnTask" uid="71c27bc2-0de1-4e91-b65a-c173310fcf23"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="f8" mc="Standard.BpmnSequenceFlow" uid="9c6f24fc-bfdc-4206-ac1b-965e1e4ea2b1"/>
+          <ATTRIBUTES>
+            <ATT name="IsImmediate">false</ATT>
+            <ATT name="ConditionExpression"></ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[f8]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SourceRef">
+              <REFOBJ>
+                <ID name="Verwerk Documenten Proc. Service" mc="Standard.BpmnTask" uid="71c27bc2-0de1-4e91-b65a-c173310fcf23"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="TargetRef">
+              <REFOBJ>
+                <ID name="Document Service registreer" mc="Standard.BpmnTask" uid="12b54b5c-83f5-4b0d-8ac2-52e1cbaa22ec"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Complex Gateway2" mc="Standard.BpmnComplexGateway" uid="1397fe21-e143-4729-90fb-7fb888f8a330"/>
+          <ATTRIBUTES>
+            <ATT name="ActivationExpression"></ATT>
+            <ATT name="GatewayDirection">UnspecifiedDirection</ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[Complex Gateway2]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="f10" mc="Standard.BpmnSequenceFlow" uid="36c17780-ace4-4f41-b3da-e0b3fd2461b2"/>
+          <ATTRIBUTES>
+            <ATT name="IsImmediate">false</ATT>
+            <ATT name="ConditionExpression"></ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[f10]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SourceRef">
+              <REFOBJ>
+                <ID name="Verwerk Documenten (verwerk)" mc="Standard.BpmnTask" uid="214b95f4-fe38-40c5-9335-84096fec9201"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="TargetRef">
+              <REFOBJ>
+                <ID name="Complex Gateway2" mc="Standard.BpmnComplexGateway" uid="1397fe21-e143-4729-90fb-7fb888f8a330"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="f12" mc="Standard.BpmnSequenceFlow" uid="8380aa56-c223-4773-8901-b12b449c51e0"/>
+          <ATTRIBUTES>
+            <ATT name="IsImmediate">false</ATT>
+            <ATT name="ConditionExpression"></ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[f12]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SourceRef">
+              <REFOBJ>
+                <ID name="Complex Gateway2" mc="Standard.BpmnComplexGateway" uid="1397fe21-e143-4729-90fb-7fb888f8a330"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="TargetRef">
+              <REFOBJ>
+                <ID name="Complex Gateway1" mc="Standard.BpmnComplexGateway" uid="28adf17c-f4f1-4216-8c3c-d89be722b256"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Process BPMN Process Design diagram" mc="Standard.BpmnProcessDesignDiagram" uid="de2c4882-3312-4bbf-89f5-92fe898ca632"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
