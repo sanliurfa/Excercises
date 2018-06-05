@@ -1,6 +1,6 @@
 package academy.learnprogramming;
 
-public class QuestionExamplesString {
+public class _055_QuestionExamplesString {
 
 	public static void main(String[] args) {
 		int numDogs = 4;
