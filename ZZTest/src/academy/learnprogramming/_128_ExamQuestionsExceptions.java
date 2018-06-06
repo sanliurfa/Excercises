@@ -18,7 +18,7 @@ public class _128_ExamQuestionsExceptions {
 		
 		
 		// 2.
-		// Wich of the following pairs fill in the blanks to make this code compile? (Choose all that apply)
+		// Which of the following pairs fill in the blanks to make this code compile? (Choose all that apply)
 		
 		// 7: public void myMethod() _____ Exception {
 		// 8: ____________ Exception();
@@ -37,7 +37,7 @@ public class _128_ExamQuestionsExceptions {
 
 		
 		// 3.
-		// Wich exception will the following throw? 
+		// Which exception will the following throw? 
 		
 		// 7: Object obj = new Integer(3);
 		// 8: String str = (String) obj;
@@ -55,7 +55,7 @@ public class _128_ExamQuestionsExceptions {
 		//					Maar String extends niet van een integer dus kan men heet niet casten.
 		
 		// 4.
-		// Wat will happen if you add te statement System.out.println(5/0); to a working main method? 
+		// What will happen if you add te statement System.out.println(5/0); to a working main method? 
 		
 		// A. It will not compile
 		// B. it will not run
