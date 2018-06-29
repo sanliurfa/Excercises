@@ -1,0 +1,9 @@
+[FONT:Arial,9,1] = [FONT:Arial,9,1]
+int = 32-bit 4 byte integer
+short = 16-bit 2 byte integer
+long = 64-bit 8 byte integer
+byte = 8-bit 1 byte integer
+float = 32-bit 4 byte floating point
+double = 64-bit 8 byte floating point
+char = 16-bit unicode
+boolean = true of false

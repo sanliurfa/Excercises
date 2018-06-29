@@ -1,0 +1,8 @@
+[FONT:Arial,9,1] = [FONT:Arial,9,1]
+Noem een ArrayList methode wat controleert of de element leeg is. = isEmpty()
+Noem een Arraylist methode wat controleert of de lijst leeg is dmv vergelijking = size == 0
+Noem een ArrayList methode welke controleert of het een bepaalde waarde bevat = contains()
+Noem een ArrayList opdracht om een waarde toe te voegen = add
+Noem een ArrayList mehode om een ArrayList te legen = clear()
+Noem een ArrayList methode om een lijst a te vergelijken met b = a.equals(b)
+Op welk(e) manier vergelijkt de ArrayList vergelijker methode = Waarde en sortering

@@ -1,0 +1,9 @@
+[FONT:Arial,9,1] = [FONT:Arial,9,1]
+Wat wordt vergeleken bij Primitives == = inhoud
+Wat wordt vergeleken bij Primitives Equals() = does not compile
+Wat wordt vergeleken bij Objecten == = object
+Wat wordt vergeleken bij Objecten Equals() = object
+Wat wordt vergeleken bij String == = object
+Wat wordt vergeleken bij String Equals() = tekst
+Wat wordt vergeleken bij ArrayList == = object
+Wat wordt vergeleken bij ArrayList Equals() = inhoud

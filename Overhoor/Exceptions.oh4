@@ -1,0 +1,16 @@
+[FONT:Arial,9,1] = [FONT:Arial,9,1]
+ArithmeticException = RuntimeException Unchecked
+NullpointerException = RuntimeException Unchecked
+ArrayIndexOutOfBoundException = RuntimeException Unchecked
+IllegalArgumentException = RuntimeException Unchecked
+InteruptedIOException = IOException Checked
+EOFException = IOException Checked
+FileNotFoundException = IOException Checked
+AWTException = Exception Checked
+IOException = Exception Checked
+RuntimeException = Exception Unchecked
+LinkageError = Error Unchecked
+VirtualMachineError = Error Unchecked
+AWTError = Error Unchecked
+Error = Throwable
+Exception = Throwable
