@@ -1,6 +1,6 @@
 package oca2018;
 
-interface Printable{
+interface Printable2{
 	
 }
 
@@ -13,7 +13,7 @@ interface Movable2{
 	
 }
 
-public class Car{
+ class Car{
 	
 }
 
