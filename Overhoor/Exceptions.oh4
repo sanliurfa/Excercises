@@ -14,3 +14,6 @@ VirtualMachineError = Error Unchecked
 AWTError = Error Unchecked
 Error = Throwable
 Exception = Throwable
+Noem de eerste voordeel van exceptions = Separating Error-Handling Code from "Regular" Code
+Noem de tweede voordeel van exceptions = Propagating Errors Up the Call Stack
+Noem de derde voordeel van exceptions = Grouping and Differentiating Error Types
