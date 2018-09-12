@@ -1,0 +1,49 @@
+<html>
+
+	<head>
+		<title>If-Statement</title>
+	
+        <style type="text/css">
+
+        
+        
+        </style>
+
+
+	</head>
+
+	<body>
+        <p>What is the magic word</p>
+        <p><input type="text"  id="textInput"></p>   
+        
+        <p><button id="textChanger">Say the magic word</button></p>
+
+        <script type="text/javascript">
+            
+            
+            
+            
+            
+            
+            document.getElementById("textChanger").onclick = function(){
+                var magicWordEntered = document.getElementById("textInput").value;
+                var theWord = "MagicWord";
+       
+                if (magicWordEntered == theWord){
+                alert("Yes")
+            } else {
+                alert("Wrong")
+            }  
+    
+            }
+            
+  
+ 
+   
+        </script>
+        
+	</body>
+
+
+
+</html>
