@@ -15,17 +15,38 @@ public class DecimalComparator {
 //		double floorDouble2 = Math.floor(number2+ 0.5d);
 		
 		
+//		
+//		DecimalFormat f = new DecimalFormat("##.###");
+//		double roundDouble1 = round(number1, 4);
+//		System.out.println(roundDouble1);
+//		
+//		double roundDouble2 = round(number2, 4);
+//		System.out.println(roundDouble2);
+//		
+//		String formatNumber1 = f.format(roundDouble1);
+//		System.out.println(formatNumber1);
+//		
+//		String formatNumber2 = f.format(roundDouble2);
+//		System.out.println(formatNumber2);
+//		
+//		if(formatNumber1.equals(formatNumber2) ) {
+//			return true;
+//		}
+
+
+		number1 = number1 * 1000;
+		number2 = number2 * 1000;
 		
-		DecimalFormat f = new DecimalFormat("##.###");
-		double roundDouble1 = round(number1, 3);
-		double roundDouble2 = round(number2, 3);
+		int number1Int = (int)number1;
+		int number2Int = (int)number2;
 		
-		String formatNumber1 = f.format(roundDouble1);
-		String formatNumber2 = f.format(roundDouble2);
-		if(formatNumber1.equals(formatNumber2) ) {
+		System.out.println(number1Int);
+		System.out.println(number2Int);
+		
+		if(number1Int - number2Int == 0) {
 			return true;
 		}
-
+		
 		
 		return false;
 	
