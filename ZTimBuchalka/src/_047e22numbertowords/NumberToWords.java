@@ -8,7 +8,7 @@ public class NumberToWords {
 //		numberToWords(10);
 //		numberToWords(1010);
 //		numberToWords(1000);
-		numberToWords(2-);
+		numberToWords(2);
 
 		
 //		System.out.println(reverse(1010));
@@ -19,7 +19,8 @@ public class NumberToWords {
 	
 	public static void numberToWords(int number) {
 		
-		if (number < 0) {
+
+		if (number < 0 ) {
 			System.out.println("Invalid Value");
 		} else {
 		
@@ -36,7 +37,7 @@ public class NumberToWords {
 		for (int i = number; i > 0; i/=10) {
 			
 		
-		
+
 		int lastDigit= number%10;
 		
 		switch (lastDigit) {

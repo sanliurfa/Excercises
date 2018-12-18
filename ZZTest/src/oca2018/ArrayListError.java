@@ -8,7 +8,7 @@ public class ArrayListError {
 		ArrayList<Integer> list = new ArrayList(1);
 		list.add(1001);
 		list.add(1002);
-		System.out.println(list.get(list.set()));
+//		System.out.println(list.get(list.set()));
 		
 		
 

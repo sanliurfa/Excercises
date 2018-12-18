@@ -40,3 +40,26 @@ public class FlourPacker {
 	}
 
 }
+
+//public static boolean canPack(int bigCount, int smallCount, int goal) {
+//    boolean canPack = false;
+//    int big = bigCount*5; // 5 kilos per bag
+//    int small = smallCount; // 1 kilo per bag
+//    int total = big + small; // total kilo bags
+//
+//    if((goal > total) || goal <=0) canPack = false;
+//    else {
+//        if((goal%5 == 0) || (small >= goal)) canPack = true;
+//        else {
+//            while (goal-5 > 0) {
+//                goal -= 5;
+//                if (goal <= small) {
+//                    canPack = true;
+//                    break;
+//                }
+//            }
+//        }
+//    }
+//    return canPack;
+//}
+
